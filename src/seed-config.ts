@@ -7,6 +7,7 @@ export const settings = [
   ['ocr_min_confidence', '0.80', 'number', 'Hasil OCR di bawah nilai ini ditandai "cek manual" (0–1)'],
   ['render_dpi', '200', 'number', 'Resolusi render halaman PDF/AI untuk OCR & viewer (dpi)'],
   ['ocr_rotations', 'true', 'boolean', 'OCR juga membaca teks yang diputar 90°/180°/270° (4× lebih lama)'],
+  ['ocr_curved_text', 'true', 'boolean', 'OCR juga membaca teks melengkung: busur, stempel, gelombang, label botol (beberapa detik per halaman)'],
   ['ocr_stale_minutes', '30', 'number', 'Job OCR yang berjalan lebih lama dari ini dianggap macet dan diulang'],
   ['admin_can_approve', 'true', 'boolean', 'Administrator boleh memutuskan tahap approval mana pun (kecuali label yang diajukannya sendiri)'],
   ['ocr_detection_model', 'PP-OCRv5_mobile_det', 'text', 'Model deteksi teks PaddleOCR (mobile = ringan untuk CPU, server = lebih teliti)'],
